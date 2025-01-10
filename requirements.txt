@@ -1,0 +1,6 @@
+inspect_ai==0.3.56
+swebench>=2.1.0
+docker
+anthropic
+openai
+google-generativeai
