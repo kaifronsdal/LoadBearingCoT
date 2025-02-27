@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="kaif@skampere1.stanford.edu:22 password (20)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="kaif@skampere1.stanford.edu:22 password (20)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/lfs/skampere1/0/kaif/GitHub/LoadBearingCoT" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

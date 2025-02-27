@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="lbcot" />
+  </component>
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{}]]></component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="lbcot" project-jdk-type="Python SDK" />
+  <component name="editorHistoryManager">
+    <entry file="jupyter-remote://skampere1:8000/putnam-math/py_src/evals/models/vllm.py" />
+    <entry file="jupyter-remote://skampere1:8000/putnam-math/py_src/data_variation_gen/tests.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/__init__.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/block.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/retry.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/generate.py" />
+    <entry file="jupyter-remote://skampere1:8000/putnam-math/py_src/evals/models/debug_wrapper.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/self_consistency.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/util.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/models/debug_wrapper.py" />
+    <entry file="jupyter-remote://skampere1:8000/Blocks/blocks/models/hf_wrapper.py" />
+    <entry file="jupyter-remote://skampere1:8000/TheoremSense/theoremsense/model_generate.py" />
+    <entry file="jupyter-remote://skampere1:8000/TheoremSense/theoremsense/roscoe/roscoe.py" />
+    <entry file="jupyter-remote://skampere1:8000/TheoremSense/theoremsense/roscoe/util.py" />
+    <entry file="jupyter-remote://skampere1:8000/TheoremSense/theoremsense/roscoe/__init__.py" />
+    <entry file="jupyter-remote://skampere1:8000/GitHub/putnam-math/src/variations/__init__.py" />
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/vllm_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/hf_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/gemini_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/debug_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jupyter-remote://skampere1:8001/theoremsense/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
