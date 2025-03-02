@@ -14,8 +14,12 @@ from inspect_ai.util import resource
 
 
 def collapse_consecutive_assistant_messages(
-        messages: list[ChatMessage],
-) -> list[ChatMessage]:
+        messages: list[ChatMessage] | TaskState,
+) -> list[ChatMessage] | TaskState:
+    if isinstance(messages, TaskState):
+        messages.messages = functools.reduce(assistant_message_reducer, messages.messages, [])
+        messages.output.completion = messages.messages[-1].text
+        return messages
     return functools.reduce(assistant_message_reducer, messages, [])
 
 

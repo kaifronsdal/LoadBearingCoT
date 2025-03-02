@@ -9,11 +9,23 @@
 #inspect eval faithfulness.py --model vllm/Qwen/Qwen2.5-7B-Instruct --log-dir unfaithful_logs_qwen7 --max-connections 100 -T use_cot=True -T truncate_frac=0.8
 #inspect eval faithfulness.py --model vllm/Qwen/Qwen2.5-7B-Instruct --log-dir unfaithful_logs_qwen7 --max-connections 100 -T use_cot=True -T truncate_frac=0.9
 #inspect eval faithfulness.py --model vllm/Qwen/Qwen2.5-7B-Instruct --log-dir unfaithful_logs_qwen7 --max-connections 100 -T use_cot=True -T truncate_frac=1.0
+
+# for frac in $(seq 0 0.1 1.0); do
+#     inspect eval faithfulness.py \
+#         --model vllm/Qwen/Qwen2.5-7B-Instruct \
+#         --log-dir unfaithful_logs_qwen7_5 \
+#         --max-connections 400 \
+#         -T use_cot=True \
+#         -T truncate_frac=$frac
+# done
+
+# inspect eval paired_faithfulness.py --model vllm/Qwen/Qwen2.5-7B-Instruct --log-dir paired_faithfulness_logs_qwen7 --max-connections 100
+
+
 for frac in $(seq 0 0.1 1.0); do
-    inspect eval faithfulness.py \
+    inspect eval paraphrase_faithfulness.py \
         --model vllm/Qwen/Qwen2.5-7B-Instruct \
-        --log-dir unfaithful_logs_qwen7_5 \
+        --log-dir paraphrase_faithfulness_logs_qwen7 \
         --max-connections 400 \
-        -T use_cot=True \
         -T truncate_frac=$frac
 done
