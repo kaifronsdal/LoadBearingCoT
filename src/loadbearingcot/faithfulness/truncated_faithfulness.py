@@ -1,6 +1,6 @@
 import random
 
-from loadbearingcot.prontoqa.util import sample_to_fewshot
+from loadbearingcot.util import sample_to_fewshot
 from pydantic import Field
 from inspect_ai.util import StoreModel
 from inspect_ai import Task, task
@@ -17,7 +17,7 @@ from inspect_ai.solver import (
 )
 import re
 
-from loadbearingcot.prontoqa.util import (
+from loadbearingcot.util import (
     collapse_assistant_message,
     prefill_message,
     load_hop_datasets,

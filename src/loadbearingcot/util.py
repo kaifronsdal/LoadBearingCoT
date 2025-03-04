@@ -133,6 +133,7 @@ def get_fewshot_examples(dataset: MemoryDataset, k: int, seed: int = None) -> li
     return random.sample(list(dataset), k)
 
 
+# TODO: Move to data/prontoqa
 def load_hop_datasets(directory_path=".", k=None, random_seed=None):
     """
     Load all {n}hop.json files from the specified directory and combine them into a single dataset.

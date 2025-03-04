@@ -28,7 +28,7 @@ import random
 
 from inspect_ai.util import resource
 
-from loadbearingcot.prontoqa.util import collapse_assistant_message, prefill_message, load_hop_datasets
+from loadbearingcot.util import collapse_assistant_message, prefill_message, load_hop_datasets
 
 
 # Few-shot prompt template partially based on https://arxiv.org/pdf/2206.14858 - Appendix D.2

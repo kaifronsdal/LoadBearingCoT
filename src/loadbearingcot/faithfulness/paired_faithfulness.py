@@ -20,7 +20,7 @@ from inspect_ai.solver import (
 from inspect_ai.util import StoreModel
 from pydantic import Field
 
-from loadbearingcot.prontoqa.util import collapse_consecutive_assistant_messages
+from loadbearingcot.util import collapse_consecutive_assistant_messages
 
 
 class PairedComparison(StoreModel):
