@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loadbearingcot"
+version = "0.0.1"
+description = "Evaluating CoT for load bearing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = []
+authors = [{ name = "Kai Fronsdal", email = "kaifronsdal@gmail.com" }]
+classifiers = [
+    "Topic :: LLM Evaluations :: Safety",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = ["inspect_ai==0.3.56", "datasets", "matplotlib", "anthropic", "openai", "google-generativeai"]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Source" = "https://github.com/pypa/sampleproject/"
