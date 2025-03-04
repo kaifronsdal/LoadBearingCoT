@@ -14,7 +14,7 @@ from inspect_ai.solver import Generate, TaskState, solver
 from inspect_ai.util import StoreModel
 from pydantic import Field
 
-from loadbearingcot.prontoqa.util import (
+from loadbearingcot.util import (
     collapse_consecutive_assistant_messages,
     load_hop_datasets,
 )
