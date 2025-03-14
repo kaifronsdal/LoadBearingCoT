@@ -52,15 +52,59 @@ def combine_messages(
     if isinstance(a.content, str) and isinstance(b.content, str):
         return message_type(content=f"{a.content}{b.content}")
     elif isinstance(a.content, list) and isinstance(b.content, list):
-        return message_type(content=a.content + b.content)
+        # Combine the lists first
+        combined_list = a.content + b.content
+        # Then merge consecutive ContentText elements
+        return message_type(content=_merge_consecutive_content_text(combined_list))
     elif isinstance(a.content, str) and isinstance(b.content, list):
-        return message_type(content=[ContentText(text=a.content), *b.content])
+        # Convert string to ContentText and prepend to list
+        combined_list = [ContentText(text=a.content)] + b.content
+        return message_type(content=_merge_consecutive_content_text(combined_list))
     elif isinstance(a.content, list) and isinstance(b.content, str):
-        return message_type(content=a.content + [ContentText(text=b.content)])
+        # Convert string to ContentText and append to list
+        combined_list = a.content + [ContentText(text=b.content)]
+        return message_type(content=_merge_consecutive_content_text(combined_list))
     else:
         raise TypeError(
             f"Cannot combine messages with invalid content types: {a.content!r}, {b.content!r}"
         )
+
+
+def _merge_consecutive_content_text(content_list: list) -> list:
+    """
+    Merge consecutive ContentText elements in a list.
+    
+    Args:
+        content_list: List of content elements
+        
+    Returns:
+        List with consecutive ContentText elements merged
+    """
+    if not content_list:
+        return []
+    
+    result = []
+    current_text = None
+    
+    for item in content_list:
+        if isinstance(item, ContentText):
+            if current_text is None:
+                current_text = item.text
+            else:
+                current_text += item.text
+        else:
+            # If we have accumulated text, add it to the result
+            if current_text is not None:
+                result.append(ContentText(text=current_text))
+                current_text = None
+            # Add the non-ContentText item
+            result.append(item)
+    
+    # Add any remaining text
+    if current_text is not None:
+        result.append(ContentText(text=current_text))
+    
+    return result
 
 
 @solver
@@ -158,6 +202,9 @@ def load_hop_datasets(directory_path=".", k=None, random_seed=None):
     # Set random seed if provided
     if random_seed is not None:
         random.seed(random_seed)
+
+    # expand ~ in path
+    directory_path = os.path.expanduser(directory_path)
 
     # Find all *hop.json files
     hop_files = glob.glob(os.path.join(directory_path, "*hop.json"))

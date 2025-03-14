@@ -13,8 +13,19 @@ dependencies = [
     "matplotlib>=3.10.1",
     "openai>=1.65.2",
     "vllm>=0.7.3",
+    "ipykernel",
+    "seaborn",
+    "trl>=0.15.2",
+    "peft>=0.14.0",
+    "flash-attn",
 ]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
+
+[tool.uv.sources]
+inspect-ai = { path = "../inspect_ai" }

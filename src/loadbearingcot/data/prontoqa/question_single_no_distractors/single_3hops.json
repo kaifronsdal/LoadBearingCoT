@@ -1,0 +1,2102 @@
+[
+  {
+    "id": 0,
+    "question": {
+      "question": "Dolpers are elastic. Jempors are dolpers. Every bempin is a jempor. Every wolpee is a bempin. Polly is a wolpee.",
+      "query": "True or false: Polly is elastic.",
+      "chain_of_thought": [
+        "Polly is a wolpee.",
+        "Wolpees are bempins.",
+        "Polly is a bempin.",
+        "Bempins are jempors.",
+        "Polly is a jempor.",
+        "Every jempor is a dolper.",
+        "Polly is a dolper.",
+        "Dolpers are elastic.",
+        "Polly is elastic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 1,
+    "question": {
+      "question": "Daumpins are not synthetic. Prilpants are daumpins. Zhomples are prilpants. Zhomples are quiet. Gergits are zhomples. Sam is a gergit.",
+      "query": "True or false: Sam is synthetic.",
+      "chain_of_thought": [
+        "Sam is a gergit.",
+        "Every gergit is a zhomple.",
+        "Sam is a zhomple.",
+        "Zhomples are prilpants.",
+        "Sam is a prilpant.",
+        "Every prilpant is a daumpin.",
+        "Sam is a daumpin.",
+        "Daumpins are not synthetic.",
+        "Sam is not synthetic."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 2,
+    "question": {
+      "question": "Each shalpist is spotless. Scrompists are shalpists. Each phorpist is a scrompist. Every prilpant is a phorpist. Prilpants are active. Wren is a prilpant.",
+      "query": "True or false: Wren is spotless.",
+      "chain_of_thought": [
+        "Wren is a prilpant.",
+        "Each prilpant is a phorpist.",
+        "Wren is a phorpist.",
+        "Every phorpist is a scrompist.",
+        "Wren is a scrompist.",
+        "Scrompists are shalpists.",
+        "Wren is a shalpist.",
+        "Shalpists are spotless.",
+        "Wren is spotless."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 3,
+    "question": {
+      "question": "Each stopin is fragrant. Each zhomple is a stopin. Ilpists are zhomples. Storpists are ilpists. Fae is a storpist.",
+      "query": "True or false: Fae is fragrant.",
+      "chain_of_thought": [
+        "Fae is a storpist.",
+        "Each storpist is an ilpist.",
+        "Fae is an ilpist.",
+        "Every ilpist is a zhomple.",
+        "Fae is a zhomple.",
+        "Each zhomple is a stopin.",
+        "Fae is a stopin.",
+        "Each stopin is fragrant.",
+        "Fae is fragrant."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 4,
+    "question": {
+      "question": "Borpins are transparent. Each hilper is a borpin. Each lirpin is a hilper. Phorpists are lirpins. Sally is a phorpist.",
+      "query": "True or false: Sally is transparent.",
+      "chain_of_thought": [
+        "Sally is a phorpist.",
+        "Every phorpist is a lirpin.",
+        "Sally is a lirpin.",
+        "Every lirpin is a hilper.",
+        "Sally is a hilper.",
+        "Hilpers are borpins.",
+        "Sally is a borpin.",
+        "Borpins are transparent.",
+        "Sally is transparent."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 5,
+    "question": {
+      "question": "Each wolpee is not blue. Shimpees are wolpees. Shimpees are silent. Parpers are shimpees. Grimpants are parpers. Polly is a grimpant.",
+      "query": "True or false: Polly is blue.",
+      "chain_of_thought": [
+        "Polly is a grimpant.",
+        "Grimpants are parpers.",
+        "Polly is a parper.",
+        "Each parper is a shimpee.",
+        "Polly is a shimpee.",
+        "Each shimpee is a wolpee.",
+        "Polly is a wolpee.",
+        "Each wolpee is not blue.",
+        "Polly is not blue."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 6,
+    "question": {
+      "question": "Shalpists are not compact. Zhimpors are shalpists. Every zhimpor is not intricate. Yompins are zhimpors. Sarpers are yompins. Sally is a sarper.",
+      "query": "True or false: Sally is compact.",
+      "chain_of_thought": [
+        "Sally is a sarper.",
+        "Each sarper is a yompin.",
+        "Sally is a yompin.",
+        "Yompins are zhimpors.",
+        "Sally is a zhimpor.",
+        "Zhimpors are shalpists.",
+        "Sally is a shalpist.",
+        "Shalpists are not compact.",
+        "Sally is not compact."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 7,
+    "question": {
+      "question": "Shimpees are not dull. Shalpists are shimpees. Impuses are shalpists. Impuses are not hidden. Bempins are impuses. Max is a bempin.",
+      "query": "True or false: Max is dull.",
+      "chain_of_thought": [
+        "Max is a bempin.",
+        "Each bempin is an impus.",
+        "Max is an impus.",
+        "Impuses are shalpists.",
+        "Max is a shalpist.",
+        "Each shalpist is a shimpee.",
+        "Max is a shimpee.",
+        "Every shimpee is not dull.",
+        "Max is not dull."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 8,
+    "question": {
+      "question": "Yompins are not curved. Kurpors are yompins. Kurpors are static. Orgits are kurpors. Fomples are orgits. Fomples are not fruity. Wren is a fomple.",
+      "query": "True or false: Wren is curved.",
+      "chain_of_thought": [
+        "Wren is a fomple.",
+        "Fomples are orgits.",
+        "Wren is an orgit.",
+        "Orgits are kurpors.",
+        "Wren is a kurpor.",
+        "Kurpors are yompins.",
+        "Wren is a yompin.",
+        "Every yompin is not curved.",
+        "Wren is not curved."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 9,
+    "question": {
+      "question": "Rifpists are not irregular. Stergits are rifpists. Dropants are stergits. Every harpin is a dropant. Polly is a harpin.",
+      "query": "True or false: Polly is irregular.",
+      "chain_of_thought": [
+        "Polly is a harpin.",
+        "Harpins are dropants.",
+        "Polly is a dropant.",
+        "Each dropant is a stergit.",
+        "Polly is a stergit.",
+        "Stergits are rifpists.",
+        "Polly is a rifpist.",
+        "Each rifpist is not irregular.",
+        "Polly is not irregular."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 10,
+    "question": {
+      "question": "Lompees are luminous. Each rorpant is a lompee. Zumpuses are rorpants. Prilpants are zumpuses. Max is a prilpant.",
+      "query": "True or false: Max is luminous.",
+      "chain_of_thought": [
+        "Max is a prilpant.",
+        "Each prilpant is a zumpus.",
+        "Max is a zumpus.",
+        "Every zumpus is a rorpant.",
+        "Max is a rorpant.",
+        "Rorpants are lompees.",
+        "Max is a lompee.",
+        "Each lompee is luminous.",
+        "Max is luminous."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 11,
+    "question": {
+      "question": "Every quimpant is not firm. Gwompants are quimpants. Each gwompant is feisty. Every zilpor is a gwompant. Dropants are zilpors. Alex is a dropant.",
+      "query": "True or false: Alex is firm.",
+      "chain_of_thought": [
+        "Alex is a dropant.",
+        "Dropants are zilpors.",
+        "Alex is a zilpor.",
+        "Each zilpor is a gwompant.",
+        "Alex is a gwompant.",
+        "Gwompants are quimpants.",
+        "Alex is a quimpant.",
+        "Each quimpant is not firm.",
+        "Alex is not firm."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 12,
+    "question": {
+      "question": "Lempers are not silent. Every felper is a lemper. Fomples are felpers. Every zhimpor is a fomple. Sam is a zhimpor.",
+      "query": "True or false: Sam is silent.",
+      "chain_of_thought": [
+        "Sam is a zhimpor.",
+        "Every zhimpor is a fomple.",
+        "Sam is a fomple.",
+        "Fomples are felpers.",
+        "Sam is a felper.",
+        "Every felper is a lemper.",
+        "Sam is a lemper.",
+        "Each lemper is not silent.",
+        "Sam is not silent."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 13,
+    "question": {
+      "question": "Shampors are metallic. Impuses are shampors. Every impus is not hard. Zhorpants are impuses. Yimples are zhorpants. Alex is a yimple.",
+      "query": "True or false: Alex is metallic.",
+      "chain_of_thought": [
+        "Alex is a yimple.",
+        "Yimples are zhorpants.",
+        "Alex is a zhorpant.",
+        "Each zhorpant is an impus.",
+        "Alex is an impus.",
+        "Impuses are shampors.",
+        "Alex is a shampor.",
+        "Every shampor is metallic.",
+        "Alex is metallic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 14,
+    "question": {
+      "question": "Lerpants are diminutive. Every folpee is a lerpant. Folpees are dry. Each twimpee is a folpee. Each parper is a twimpee. Every parper is not fast. Sally is a parper.",
+      "query": "True or false: Sally is diminutive.",
+      "chain_of_thought": [
+        "Sally is a parper.",
+        "Parpers are twimpees.",
+        "Sally is a twimpee.",
+        "Every twimpee is a folpee.",
+        "Sally is a folpee.",
+        "Each folpee is a lerpant.",
+        "Sally is a lerpant.",
+        "Lerpants are diminutive.",
+        "Sally is diminutive."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 15,
+    "question": {
+      "question": "Each ilpist is not rectangular. Each gwompant is an ilpist. Every wumpus is a gwompant. Zumpuses are wumpuses. Alex is a zumpus.",
+      "query": "True or false: Alex is rectangular.",
+      "chain_of_thought": [
+        "Alex is a zumpus.",
+        "Every zumpus is a wumpus.",
+        "Alex is a wumpus.",
+        "Each wumpus is a gwompant.",
+        "Alex is a gwompant.",
+        "Gwompants are ilpists.",
+        "Alex is an ilpist.",
+        "Ilpists are not rectangular.",
+        "Alex is not rectangular."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 16,
+    "question": {
+      "question": "Each lirpin is not proper. Every prilpant is a lirpin. Each thorpin is a prilpant. Every kurpor is a thorpin. Polly is a kurpor.",
+      "query": "True or false: Polly is proper.",
+      "chain_of_thought": [
+        "Polly is a kurpor.",
+        "Every kurpor is a thorpin.",
+        "Polly is a thorpin.",
+        "Thorpins are prilpants.",
+        "Polly is a prilpant.",
+        "Prilpants are lirpins.",
+        "Polly is a lirpin.",
+        "Lirpins are not proper.",
+        "Polly is not proper."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 17,
+    "question": {
+      "question": "Zilpors are pristine. Phorpists are zilpors. Each yempor is a phorpist. Yempors are grimy. Stergits are yempors. Alex is a stergit.",
+      "query": "True or false: Alex is pristine.",
+      "chain_of_thought": [
+        "Alex is a stergit.",
+        "Every stergit is a yempor.",
+        "Alex is a yempor.",
+        "Every yempor is a phorpist.",
+        "Alex is a phorpist.",
+        "Every phorpist is a zilpor.",
+        "Alex is a zilpor.",
+        "Zilpors are pristine.",
+        "Alex is pristine."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 18,
+    "question": {
+      "question": "Every felper is not short. Every remple is a felper. Every jempor is a remple. Chorpers are jempors. Each chorper is not superficial. Wren is a chorper.",
+      "query": "True or false: Wren is short.",
+      "chain_of_thought": [
+        "Wren is a chorper.",
+        "Chorpers are jempors.",
+        "Wren is a jempor.",
+        "Jempors are remples.",
+        "Wren is a remple.",
+        "Each remple is a felper.",
+        "Wren is a felper.",
+        "Felpers are not short.",
+        "Wren is not short."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 19,
+    "question": {
+      "question": "Each harpin is modern. Every fimple is a harpin. Each fimple is not round. Each twimpee is a fimple. Each twimpee is not red. Each bongit is a twimpee. Each bongit is structured. Sally is a bongit.",
+      "query": "True or false: Sally is modern.",
+      "chain_of_thought": [
+        "Sally is a bongit.",
+        "Each bongit is a twimpee.",
+        "Sally is a twimpee.",
+        "Twimpees are fimples.",
+        "Sally is a fimple.",
+        "Every fimple is a harpin.",
+        "Sally is a harpin.",
+        "Harpins are modern.",
+        "Sally is modern."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 20,
+    "question": {
+      "question": "Each dolper is regular. Shergits are dolpers. Shergits are not apparent. Each folpee is a shergit. Folpees are balanced. Scrompists are folpees. Stella is a scrompist.",
+      "query": "True or false: Stella is regular.",
+      "chain_of_thought": [
+        "Stella is a scrompist.",
+        "Scrompists are folpees.",
+        "Stella is a folpee.",
+        "Each folpee is a shergit.",
+        "Stella is a shergit.",
+        "Shergits are dolpers.",
+        "Stella is a dolper.",
+        "Each dolper is regular.",
+        "Stella is regular."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 21,
+    "question": {
+      "question": "Zhimpors are stable. Dulpins are zhimpors. Numpuses are dulpins. Every ilpist is a numpus. Sam is an ilpist.",
+      "query": "True or false: Sam is stable.",
+      "chain_of_thought": [
+        "Sam is an ilpist.",
+        "Ilpists are numpuses.",
+        "Sam is a numpus.",
+        "Each numpus is a dulpin.",
+        "Sam is a dulpin.",
+        "Each dulpin is a zhimpor.",
+        "Sam is a zhimpor.",
+        "Every zhimpor is stable.",
+        "Sam is stable."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 22,
+    "question": {
+      "question": "Every stirpor is not dull. Werpors are stirpors. Shampors are werpors. Shampors are short. Each rorpant is a shampor. Each rorpant is not fragrant. Stella is a rorpant.",
+      "query": "True or false: Stella is dull.",
+      "chain_of_thought": [
+        "Stella is a rorpant.",
+        "Each rorpant is a shampor.",
+        "Stella is a shampor.",
+        "Every shampor is a werpor.",
+        "Stella is a werpor.",
+        "Each werpor is a stirpor.",
+        "Stella is a stirpor.",
+        "Each stirpor is not dull.",
+        "Stella is not dull."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 23,
+    "question": {
+      "question": "Shimpees are massive. Pergits are shimpees. Each pergit is not bright. Drompees are pergits. Each serpee is a drompee. Rex is a serpee.",
+      "query": "True or false: Rex is massive.",
+      "chain_of_thought": [
+        "Rex is a serpee.",
+        "Every serpee is a drompee.",
+        "Rex is a drompee.",
+        "Every drompee is a pergit.",
+        "Rex is a pergit.",
+        "Pergits are shimpees.",
+        "Rex is a shimpee.",
+        "Shimpees are massive.",
+        "Rex is massive."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 24,
+    "question": {
+      "question": "Dumpuses are not mixed. Worples are dumpuses. Worples are not aggressive. Stirpors are worples. Stirpors are not plush. Rifpists are stirpors. Each rifpist is crisp. Wren is a rifpist.",
+      "query": "True or false: Wren is mixed.",
+      "chain_of_thought": [
+        "Wren is a rifpist.",
+        "Every rifpist is a stirpor.",
+        "Wren is a stirpor.",
+        "Stirpors are worples.",
+        "Wren is a worple.",
+        "Worples are dumpuses.",
+        "Wren is a dumpus.",
+        "Every dumpus is not mixed.",
+        "Wren is not mixed."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 25,
+    "question": {
+      "question": "Each dolper is balanced. Dropants are dolpers. Each dropant is not weak. Each parper is a dropant. Every stopin is a parper. Polly is a stopin.",
+      "query": "True or false: Polly is balanced.",
+      "chain_of_thought": [
+        "Polly is a stopin.",
+        "Each stopin is a parper.",
+        "Polly is a parper.",
+        "Every parper is a dropant.",
+        "Polly is a dropant.",
+        "Each dropant is a dolper.",
+        "Polly is a dolper.",
+        "Dolpers are balanced.",
+        "Polly is balanced."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 26,
+    "question": {
+      "question": "Each yimple is not large. Each arper is a yimple. Arpers are luminous. Every twimpee is an arper. Rompuses are twimpees. Polly is a rompus.",
+      "query": "True or false: Polly is large.",
+      "chain_of_thought": [
+        "Polly is a rompus.",
+        "Each rompus is a twimpee.",
+        "Polly is a twimpee.",
+        "Twimpees are arpers.",
+        "Polly is an arper.",
+        "Arpers are yimples.",
+        "Polly is a yimple.",
+        "Yimples are not large.",
+        "Polly is not large."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 27,
+    "question": {
+      "question": "Stopins are not massive. Timples are stopins. Scrompists are timples. Shalpists are scrompists. Each shalpist is not profound. Sally is a shalpist.",
+      "query": "True or false: Sally is massive.",
+      "chain_of_thought": [
+        "Sally is a shalpist.",
+        "Every shalpist is a scrompist.",
+        "Sally is a scrompist.",
+        "Scrompists are timples.",
+        "Sally is a timple.",
+        "Timples are stopins.",
+        "Sally is a stopin.",
+        "Stopins are not massive.",
+        "Sally is not massive."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 28,
+    "question": {
+      "question": "Every kergit is dry. Every yerpist is a kergit. Zhomples are yerpists. Each zhomple is fresh. Every sorple is a zhomple. Polly is a sorple.",
+      "query": "True or false: Polly is dry.",
+      "chain_of_thought": [
+        "Polly is a sorple.",
+        "Sorples are zhomples.",
+        "Polly is a zhomple.",
+        "Each zhomple is a yerpist.",
+        "Polly is a yerpist.",
+        "Yerpists are kergits.",
+        "Polly is a kergit.",
+        "Every kergit is dry.",
+        "Polly is dry."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 29,
+    "question": {
+      "question": "Each umpist is not flexible. Every shampor is an umpist. Shampors are superficial. Each serpee is a shampor. Each gomper is a serpee. Gompers are not musty. Wren is a gomper.",
+      "query": "True or false: Wren is flexible.",
+      "chain_of_thought": [
+        "Wren is a gomper.",
+        "Gompers are serpees.",
+        "Wren is a serpee.",
+        "Serpees are shampors.",
+        "Wren is a shampor.",
+        "Shampors are umpists.",
+        "Wren is an umpist.",
+        "Umpists are not flexible.",
+        "Wren is not flexible."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 30,
+    "question": {
+      "question": "Every boompist is superficial. Kergits are boompists. Every kergit is crisp. Twimpees are kergits. Every rimpee is a twimpee. Rimpees are not fresh. Sam is a rimpee.",
+      "query": "True or false: Sam is superficial.",
+      "chain_of_thought": [
+        "Sam is a rimpee.",
+        "Rimpees are twimpees.",
+        "Sam is a twimpee.",
+        "Each twimpee is a kergit.",
+        "Sam is a kergit.",
+        "Kergits are boompists.",
+        "Sam is a boompist.",
+        "Every boompist is superficial.",
+        "Sam is superficial."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 31,
+    "question": {
+      "question": "Every werpor is passive. Drompees are werpors. Every orgit is a drompee. Every remple is an orgit. Polly is a remple.",
+      "query": "True or false: Polly is passive.",
+      "chain_of_thought": [
+        "Polly is a remple.",
+        "Each remple is an orgit.",
+        "Polly is an orgit.",
+        "Orgits are drompees.",
+        "Polly is a drompee.",
+        "Every drompee is a werpor.",
+        "Polly is a werpor.",
+        "Every werpor is passive.",
+        "Polly is passive."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 32,
+    "question": {
+      "question": "Kergits are not basic. Daumpins are kergits. Every rimpee is a daumpin. Zhimpors are rimpees. Alex is a zhimpor.",
+      "query": "True or false: Alex is basic.",
+      "chain_of_thought": [
+        "Alex is a zhimpor.",
+        "Each zhimpor is a rimpee.",
+        "Alex is a rimpee.",
+        "Rimpees are daumpins.",
+        "Alex is a daumpin.",
+        "Daumpins are kergits.",
+        "Alex is a kergit.",
+        "Kergits are not basic.",
+        "Alex is not basic."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 33,
+    "question": {
+      "question": "Each tumpus is not pure. Each stopin is a tumpus. Each rompus is a stopin. Rompuses are floral. Borpins are rompuses. Max is a borpin.",
+      "query": "True or false: Max is pure.",
+      "chain_of_thought": [
+        "Max is a borpin.",
+        "Borpins are rompuses.",
+        "Max is a rompus.",
+        "Rompuses are stopins.",
+        "Max is a stopin.",
+        "Each stopin is a tumpus.",
+        "Max is a tumpus.",
+        "Every tumpus is not pure.",
+        "Max is not pure."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 34,
+    "question": {
+      "question": "Orgits are pointed. Each zhorpant is an orgit. Each zhorpant is rough. Each stergit is a zhorpant. Each parper is a stergit. Polly is a parper.",
+      "query": "True or false: Polly is pointed.",
+      "chain_of_thought": [
+        "Polly is a parper.",
+        "Every parper is a stergit.",
+        "Polly is a stergit.",
+        "Stergits are zhorpants.",
+        "Polly is a zhorpant.",
+        "Zhorpants are orgits.",
+        "Polly is an orgit.",
+        "Orgits are pointed.",
+        "Polly is pointed."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 35,
+    "question": {
+      "question": "Frompors are not powerful. Shimpees are frompors. Every shimpee is thick. Every bongit is a shimpee. Werpors are bongits. Polly is a werpor.",
+      "query": "True or false: Polly is powerful.",
+      "chain_of_thought": [
+        "Polly is a werpor.",
+        "Each werpor is a bongit.",
+        "Polly is a bongit.",
+        "Bongits are shimpees.",
+        "Polly is a shimpee.",
+        "Each shimpee is a frompor.",
+        "Polly is a frompor.",
+        "Frompors are not powerful.",
+        "Polly is not powerful."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 36,
+    "question": {
+      "question": "Each arper is sharp. Harpins are arpers. Every rorpant is a harpin. Lirpins are rorpants. Wren is a lirpin.",
+      "query": "True or false: Wren is sharp.",
+      "chain_of_thought": [
+        "Wren is a lirpin.",
+        "Every lirpin is a rorpant.",
+        "Wren is a rorpant.",
+        "Rorpants are harpins.",
+        "Wren is a harpin.",
+        "Harpins are arpers.",
+        "Wren is an arper.",
+        "Each arper is sharp.",
+        "Wren is sharp."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 37,
+    "question": {
+      "question": "Yempors are wobbly. Each twimpee is a yempor. Boompists are twimpees. Boompists are shallow. Daumpins are boompists. Rex is a daumpin.",
+      "query": "True or false: Rex is wobbly.",
+      "chain_of_thought": [
+        "Rex is a daumpin.",
+        "Each daumpin is a boompist.",
+        "Rex is a boompist.",
+        "Each boompist is a twimpee.",
+        "Rex is a twimpee.",
+        "Twimpees are yempors.",
+        "Rex is a yempor.",
+        "Every yempor is wobbly.",
+        "Rex is wobbly."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 38,
+    "question": {
+      "question": "Yimples are round. Each dulpin is a yimple. Yempors are dulpins. Every storpist is a yempor. Fae is a storpist.",
+      "query": "True or false: Fae is round.",
+      "chain_of_thought": [
+        "Fae is a storpist.",
+        "Every storpist is a yempor.",
+        "Fae is a yempor.",
+        "Every yempor is a dulpin.",
+        "Fae is a dulpin.",
+        "Each dulpin is a yimple.",
+        "Fae is a yimple.",
+        "Every yimple is round.",
+        "Fae is round."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 39,
+    "question": {
+      "question": "Every fimple is not straight. Yompins are fimples. Parpers are yompins. Zilpors are parpers. Polly is a zilpor.",
+      "query": "True or false: Polly is straight.",
+      "chain_of_thought": [
+        "Polly is a zilpor.",
+        "Every zilpor is a parper.",
+        "Polly is a parper.",
+        "Each parper is a yompin.",
+        "Polly is a yompin.",
+        "Yompins are fimples.",
+        "Polly is a fimple.",
+        "Every fimple is not straight.",
+        "Polly is not straight."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 40,
+    "question": {
+      "question": "Every kergit is not weak. Zilpors are kergits. Zilpors are not stale. Yimples are zilpors. Yimples are small. Borpins are yimples. Stella is a borpin.",
+      "query": "True or false: Stella is weak.",
+      "chain_of_thought": [
+        "Stella is a borpin.",
+        "Borpins are yimples.",
+        "Stella is a yimple.",
+        "Each yimple is a zilpor.",
+        "Stella is a zilpor.",
+        "Each zilpor is a kergit.",
+        "Stella is a kergit.",
+        "Kergits are not weak.",
+        "Stella is not weak."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 41,
+    "question": {
+      "question": "Welgits are not messy. Each chorper is a welgit. Each irper is a chorper. Every rorpant is an irper. Sally is a rorpant.",
+      "query": "True or false: Sally is messy.",
+      "chain_of_thought": [
+        "Sally is a rorpant.",
+        "Rorpants are irpers.",
+        "Sally is an irper.",
+        "Each irper is a chorper.",
+        "Sally is a chorper.",
+        "Every chorper is a welgit.",
+        "Sally is a welgit.",
+        "Welgits are not messy.",
+        "Sally is not messy."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 42,
+    "question": {
+      "question": "Shumples are not timeless. Zilpors are shumples. Zilpors are damp. Each zhimpor is a zilpor. Rofpins are zhimpors. Rex is a rofpin.",
+      "query": "True or false: Rex is timeless.",
+      "chain_of_thought": [
+        "Rex is a rofpin.",
+        "Rofpins are zhimpors.",
+        "Rex is a zhimpor.",
+        "Zhimpors are zilpors.",
+        "Rex is a zilpor.",
+        "Each zilpor is a shumple.",
+        "Rex is a shumple.",
+        "Each shumple is not timeless.",
+        "Rex is not timeless."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 43,
+    "question": {
+      "question": "Stirpors are not spotless. Zhimpors are stirpors. Zhimpors are brown. Each porpor is a zhimpor. Welgits are porpors. Fae is a welgit.",
+      "query": "True or false: Fae is spotless.",
+      "chain_of_thought": [
+        "Fae is a welgit.",
+        "Every welgit is a porpor.",
+        "Fae is a porpor.",
+        "Every porpor is a zhimpor.",
+        "Fae is a zhimpor.",
+        "Zhimpors are stirpors.",
+        "Fae is a stirpor.",
+        "Stirpors are not spotless.",
+        "Fae is not spotless."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 44,
+    "question": {
+      "question": "Numpuses are not swift. Lompees are numpuses. Every shumple is a lompee. Each urpant is a shumple. Max is an urpant.",
+      "query": "True or false: Max is swift.",
+      "chain_of_thought": [
+        "Max is an urpant.",
+        "Every urpant is a shumple.",
+        "Max is a shumple.",
+        "Shumples are lompees.",
+        "Max is a lompee.",
+        "Lompees are numpuses.",
+        "Max is a numpus.",
+        "Numpuses are not swift.",
+        "Max is not swift."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 45,
+    "question": {
+      "question": "Kurpors are not deep. Each lompee is a kurpor. Thorpins are lompees. Shampors are thorpins. Sam is a shampor.",
+      "query": "True or false: Sam is deep.",
+      "chain_of_thought": [
+        "Sam is a shampor.",
+        "Shampors are thorpins.",
+        "Sam is a thorpin.",
+        "Each thorpin is a lompee.",
+        "Sam is a lompee.",
+        "Each lompee is a kurpor.",
+        "Sam is a kurpor.",
+        "Every kurpor is not deep.",
+        "Sam is not deep."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 46,
+    "question": {
+      "question": "Every shergit is not thick. Every felper is a shergit. Porpors are felpers. Thorpins are porpors. Max is a thorpin.",
+      "query": "True or false: Max is thick.",
+      "chain_of_thought": [
+        "Max is a thorpin.",
+        "Thorpins are porpors.",
+        "Max is a porpor.",
+        "Every porpor is a felper.",
+        "Max is a felper.",
+        "Each felper is a shergit.",
+        "Max is a shergit.",
+        "Every shergit is not thick.",
+        "Max is not thick."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 47,
+    "question": {
+      "question": "Each thorpin is not wooden. Each urpant is a thorpin. Each urpant is active. Every irper is an urpant. Every werpor is an irper. Rex is a werpor.",
+      "query": "True or false: Rex is wooden.",
+      "chain_of_thought": [
+        "Rex is a werpor.",
+        "Every werpor is an irper.",
+        "Rex is an irper.",
+        "Irpers are urpants.",
+        "Rex is an urpant.",
+        "Urpants are thorpins.",
+        "Rex is a thorpin.",
+        "Every thorpin is not wooden.",
+        "Rex is not wooden."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 48,
+    "question": {
+      "question": "Shalpists are not damp. Yerpists are shalpists. Frompors are yerpists. Rompuses are frompors. Rompuses are opaque. Sally is a rompus.",
+      "query": "True or false: Sally is damp.",
+      "chain_of_thought": [
+        "Sally is a rompus.",
+        "Rompuses are frompors.",
+        "Sally is a frompor.",
+        "Every frompor is a yerpist.",
+        "Sally is a yerpist.",
+        "Yerpists are shalpists.",
+        "Sally is a shalpist.",
+        "Shalpists are not damp.",
+        "Sally is not damp."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 49,
+    "question": {
+      "question": "Every jompus is not thick. Lerpants are jompuses. Umpists are lerpants. Porpors are umpists. Porpors are not wet. Wren is a porpor.",
+      "query": "True or false: Wren is thick.",
+      "chain_of_thought": [
+        "Wren is a porpor.",
+        "Each porpor is an umpist.",
+        "Wren is an umpist.",
+        "Each umpist is a lerpant.",
+        "Wren is a lerpant.",
+        "Every lerpant is a jompus.",
+        "Wren is a jompus.",
+        "Jompuses are not thick.",
+        "Wren is not thick."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 50,
+    "question": {
+      "question": "Every daumpin is not fresh. Each gergit is a daumpin. Stirpors are gergits. Werpors are stirpors. Sam is a werpor.",
+      "query": "True or false: Sam is fresh.",
+      "chain_of_thought": [
+        "Sam is a werpor.",
+        "Every werpor is a stirpor.",
+        "Sam is a stirpor.",
+        "Every stirpor is a gergit.",
+        "Sam is a gergit.",
+        "Every gergit is a daumpin.",
+        "Sam is a daumpin.",
+        "Every daumpin is not fresh.",
+        "Sam is not fresh."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 51,
+    "question": {
+      "question": "Each zhorpant is elastic. Every gwompant is a zhorpant. Every gwompant is fragrant. Each shimpee is a gwompant. Yumpuses are shimpees. Sally is a yumpus.",
+      "query": "True or false: Sally is elastic.",
+      "chain_of_thought": [
+        "Sally is a yumpus.",
+        "Yumpuses are shimpees.",
+        "Sally is a shimpee.",
+        "Shimpees are gwompants.",
+        "Sally is a gwompant.",
+        "Every gwompant is a zhorpant.",
+        "Sally is a zhorpant.",
+        "Every zhorpant is elastic.",
+        "Sally is elastic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 52,
+    "question": {
+      "question": "Yumpuses are not artificial. Gergits are yumpuses. Every gwompant is a gergit. Each arper is a gwompant. Arpers are not passive. Fae is an arper.",
+      "query": "True or false: Fae is artificial.",
+      "chain_of_thought": [
+        "Fae is an arper.",
+        "Every arper is a gwompant.",
+        "Fae is a gwompant.",
+        "Gwompants are gergits.",
+        "Fae is a gergit.",
+        "Each gergit is a yumpus.",
+        "Fae is a yumpus.",
+        "Every yumpus is not artificial.",
+        "Fae is not artificial."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 53,
+    "question": {
+      "question": "Each storpist is structured. Serpees are storpists. Urpants are serpees. Urpants are synthetic. Each rimpee is an urpant. Sally is a rimpee.",
+      "query": "True or false: Sally is structured.",
+      "chain_of_thought": [
+        "Sally is a rimpee.",
+        "Rimpees are urpants.",
+        "Sally is an urpant.",
+        "Each urpant is a serpee.",
+        "Sally is a serpee.",
+        "Every serpee is a storpist.",
+        "Sally is a storpist.",
+        "Every storpist is structured.",
+        "Sally is structured."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 54,
+    "question": {
+      "question": "Impuses are short. Vumpuses are impuses. Every wolpee is a vumpus. Every wolpee is proper. Gwompants are wolpees. Sally is a gwompant.",
+      "query": "True or false: Sally is short.",
+      "chain_of_thought": [
+        "Sally is a gwompant.",
+        "Gwompants are wolpees.",
+        "Sally is a wolpee.",
+        "Each wolpee is a vumpus.",
+        "Sally is a vumpus.",
+        "Every vumpus is an impus.",
+        "Sally is an impus.",
+        "Each impus is short.",
+        "Sally is short."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 55,
+    "question": {
+      "question": "Shampors are old. Every jelgit is a shampor. Scrompists are jelgits. Dropants are scrompists. Dropants are not liquid. Max is a dropant.",
+      "query": "True or false: Max is old.",
+      "chain_of_thought": [
+        "Max is a dropant.",
+        "Each dropant is a scrompist.",
+        "Max is a scrompist.",
+        "Scrompists are jelgits.",
+        "Max is a jelgit.",
+        "Each jelgit is a shampor.",
+        "Max is a shampor.",
+        "Shampors are old.",
+        "Max is old."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 56,
+    "question": {
+      "question": "Each lirpin is not curved. Each shimpee is a lirpin. Every shimpee is opaque. Dumpuses are shimpees. Every prilpant is a dumpus. Rex is a prilpant.",
+      "query": "True or false: Rex is curved.",
+      "chain_of_thought": [
+        "Rex is a prilpant.",
+        "Prilpants are dumpuses.",
+        "Rex is a dumpus.",
+        "Each dumpus is a shimpee.",
+        "Rex is a shimpee.",
+        "Each shimpee is a lirpin.",
+        "Rex is a lirpin.",
+        "Lirpins are not curved.",
+        "Rex is not curved."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 57,
+    "question": {
+      "question": "Each storpist is thin. Every sorple is a storpist. Every irper is a sorple. Every rompus is an irper. Every rompus is not brown. Sally is a rompus.",
+      "query": "True or false: Sally is thin.",
+      "chain_of_thought": [
+        "Sally is a rompus.",
+        "Each rompus is an irper.",
+        "Sally is an irper.",
+        "Every irper is a sorple.",
+        "Sally is a sorple.",
+        "Sorples are storpists.",
+        "Sally is a storpist.",
+        "Storpists are thin.",
+        "Sally is thin."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 58,
+    "question": {
+      "question": "Frompors are not bright. Every serpee is a frompor. Every twimpee is a serpee. Twimpees are grimy. Borpins are twimpees. Borpins are not aromatic. Sam is a borpin.",
+      "query": "True or false: Sam is bright.",
+      "chain_of_thought": [
+        "Sam is a borpin.",
+        "Borpins are twimpees.",
+        "Sam is a twimpee.",
+        "Every twimpee is a serpee.",
+        "Sam is a serpee.",
+        "Serpees are frompors.",
+        "Sam is a frompor.",
+        "Every frompor is not bright.",
+        "Sam is not bright."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 59,
+    "question": {
+      "question": "Every wumpus is futuristic. Parpers are wumpuses. Each urpant is a parper. Every urpant is not short. Stirpors are urpants. Alex is a stirpor.",
+      "query": "True or false: Alex is futuristic.",
+      "chain_of_thought": [
+        "Alex is a stirpor.",
+        "Each stirpor is an urpant.",
+        "Alex is an urpant.",
+        "Each urpant is a parper.",
+        "Alex is a parper.",
+        "Each parper is a wumpus.",
+        "Alex is a wumpus.",
+        "Each wumpus is futuristic.",
+        "Alex is futuristic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 60,
+    "question": {
+      "question": "Kurpors are not circular. Dropants are kurpors. Each ilpist is a dropant. Every ilpist is regular. Porpors are ilpists. Porpors are not clean. Sam is a porpor.",
+      "query": "True or false: Sam is circular.",
+      "chain_of_thought": [
+        "Sam is a porpor.",
+        "Every porpor is an ilpist.",
+        "Sam is an ilpist.",
+        "Every ilpist is a dropant.",
+        "Sam is a dropant.",
+        "Dropants are kurpors.",
+        "Sam is a kurpor.",
+        "Each kurpor is not circular.",
+        "Sam is not circular."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 61,
+    "question": {
+      "question": "Each dulpin is not angry. Pergits are dulpins. Each pergit is not arid. Every bempin is a pergit. Bempins are swift. Each hilper is a bempin. Sally is a hilper.",
+      "query": "True or false: Sally is angry.",
+      "chain_of_thought": [
+        "Sally is a hilper.",
+        "Each hilper is a bempin.",
+        "Sally is a bempin.",
+        "Bempins are pergits.",
+        "Sally is a pergit.",
+        "Pergits are dulpins.",
+        "Sally is a dulpin.",
+        "Dulpins are not angry.",
+        "Sally is not angry."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 62,
+    "question": {
+      "question": "Each urpant is not chaotic. Every pergit is an urpant. Yimples are pergits. Every jompus is a yimple. Every jompus is not estimated. Max is a jompus.",
+      "query": "True or false: Max is chaotic.",
+      "chain_of_thought": [
+        "Max is a jompus.",
+        "Jompuses are yimples.",
+        "Max is a yimple.",
+        "Yimples are pergits.",
+        "Max is a pergit.",
+        "Pergits are urpants.",
+        "Max is an urpant.",
+        "Urpants are not chaotic.",
+        "Max is not chaotic."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 63,
+    "question": {
+      "question": "Every folpee is not weightless. Kergits are folpees. Every remple is a kergit. Each dropant is a remple. Max is a dropant.",
+      "query": "True or false: Max is weightless.",
+      "chain_of_thought": [
+        "Max is a dropant.",
+        "Dropants are remples.",
+        "Max is a remple.",
+        "Remples are kergits.",
+        "Max is a kergit.",
+        "Kergits are folpees.",
+        "Max is a folpee.",
+        "Each folpee is not weightless.",
+        "Max is not weightless."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 64,
+    "question": {
+      "question": "Borpins are quiet. Shumples are borpins. Stergits are shumples. Each stergit is not chaotic. Every rofpin is a stergit. Every rofpin is not shy. Sally is a rofpin.",
+      "query": "True or false: Sally is quiet.",
+      "chain_of_thought": [
+        "Sally is a rofpin.",
+        "Rofpins are stergits.",
+        "Sally is a stergit.",
+        "Every stergit is a shumple.",
+        "Sally is a shumple.",
+        "Shumples are borpins.",
+        "Sally is a borpin.",
+        "Borpins are quiet.",
+        "Sally is quiet."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 65,
+    "question": {
+      "question": "Zhimpors are massive. Each stopin is a zhimpor. Every drompee is a stopin. Each starple is a drompee. Each starple is not sour. Max is a starple.",
+      "query": "True or false: Max is massive.",
+      "chain_of_thought": [
+        "Max is a starple.",
+        "Starples are drompees.",
+        "Max is a drompee.",
+        "Drompees are stopins.",
+        "Max is a stopin.",
+        "Stopins are zhimpors.",
+        "Max is a zhimpor.",
+        "Each zhimpor is massive.",
+        "Max is massive."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 66,
+    "question": {
+      "question": "Boompists are not active. Sarpers are boompists. Each chorper is a sarper. Shalpists are chorpers. Alex is a shalpist.",
+      "query": "True or false: Alex is active.",
+      "chain_of_thought": [
+        "Alex is a shalpist.",
+        "Each shalpist is a chorper.",
+        "Alex is a chorper.",
+        "Chorpers are sarpers.",
+        "Alex is a sarper.",
+        "Each sarper is a boompist.",
+        "Alex is a boompist.",
+        "Every boompist is not active.",
+        "Alex is not active."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 67,
+    "question": {
+      "question": "Each dalpist is not pure. Stergits are dalpists. Orgits are stergits. Every orgit is not clean. Every gwompant is an orgit. Wren is a gwompant.",
+      "query": "True or false: Wren is pure.",
+      "chain_of_thought": [
+        "Wren is a gwompant.",
+        "Every gwompant is an orgit.",
+        "Wren is an orgit.",
+        "Every orgit is a stergit.",
+        "Wren is a stergit.",
+        "Stergits are dalpists.",
+        "Wren is a dalpist.",
+        "Each dalpist is not pure.",
+        "Wren is not pure."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 68,
+    "question": {
+      "question": "Worples are not wobbly. Lompees are worples. Each yumpus is a lompee. Each scrompist is a yumpus. Each scrompist is not fresh. Stella is a scrompist.",
+      "query": "True or false: Stella is wobbly.",
+      "chain_of_thought": [
+        "Stella is a scrompist.",
+        "Scrompists are yumpuses.",
+        "Stella is a yumpus.",
+        "Yumpuses are lompees.",
+        "Stella is a lompee.",
+        "Lompees are worples.",
+        "Stella is a worple.",
+        "Worples are not wobbly.",
+        "Stella is not wobbly."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 69,
+    "question": {
+      "question": "Borpins are synthetic. Worples are borpins. Each worple is wobbly. Every shalpist is a worple. Each sorple is a shalpist. Alex is a sorple.",
+      "query": "True or false: Alex is synthetic.",
+      "chain_of_thought": [
+        "Alex is a sorple.",
+        "Each sorple is a shalpist.",
+        "Alex is a shalpist.",
+        "Every shalpist is a worple.",
+        "Alex is a worple.",
+        "Worples are borpins.",
+        "Alex is a borpin.",
+        "Every borpin is synthetic.",
+        "Alex is synthetic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 70,
+    "question": {
+      "question": "Every porpor is static. Fomples are porpors. Orgits are fomples. Lompees are orgits. Lompees are rectangular. Max is a lompee.",
+      "query": "True or false: Max is static.",
+      "chain_of_thought": [
+        "Max is a lompee.",
+        "Lompees are orgits.",
+        "Max is an orgit.",
+        "Every orgit is a fomple.",
+        "Max is a fomple.",
+        "Fomples are porpors.",
+        "Max is a porpor.",
+        "Porpors are static.",
+        "Max is static."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 71,
+    "question": {
+      "question": "Stopins are twisted. Yempors are stopins. Shilpants are yempors. Shilpants are formal. Each pergit is a shilpant. Each pergit is not short. Sally is a pergit.",
+      "query": "True or false: Sally is twisted.",
+      "chain_of_thought": [
+        "Sally is a pergit.",
+        "Pergits are shilpants.",
+        "Sally is a shilpant.",
+        "Each shilpant is a yempor.",
+        "Sally is a yempor.",
+        "Every yempor is a stopin.",
+        "Sally is a stopin.",
+        "Stopins are twisted.",
+        "Sally is twisted."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 72,
+    "question": {
+      "question": "Every wolpee is not wooden. Rorpants are wolpees. Porpors are rorpants. Every porpor is smooth. Every gergit is a porpor. Max is a gergit.",
+      "query": "True or false: Max is wooden.",
+      "chain_of_thought": [
+        "Max is a gergit.",
+        "Gergits are porpors.",
+        "Max is a porpor.",
+        "Every porpor is a rorpant.",
+        "Max is a rorpant.",
+        "Rorpants are wolpees.",
+        "Max is a wolpee.",
+        "Every wolpee is not wooden.",
+        "Max is not wooden."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 73,
+    "question": {
+      "question": "Jompuses are not bright. Lerpants are jompuses. Every gergit is a lerpant. Each irper is a gergit. Max is an irper.",
+      "query": "True or false: Max is bright.",
+      "chain_of_thought": [
+        "Max is an irper.",
+        "Irpers are gergits.",
+        "Max is a gergit.",
+        "Every gergit is a lerpant.",
+        "Max is a lerpant.",
+        "Lerpants are jompuses.",
+        "Max is a jompus.",
+        "Jompuses are not bright.",
+        "Max is not bright."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 74,
+    "question": {
+      "question": "Tumpuses are casual. Every rofpin is a tumpus. Shalpists are rofpins. Each werpor is a shalpist. Alex is a werpor.",
+      "query": "True or false: Alex is casual.",
+      "chain_of_thought": [
+        "Alex is a werpor.",
+        "Werpors are shalpists.",
+        "Alex is a shalpist.",
+        "Shalpists are rofpins.",
+        "Alex is a rofpin.",
+        "Each rofpin is a tumpus.",
+        "Alex is a tumpus.",
+        "Tumpuses are casual.",
+        "Alex is casual."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 75,
+    "question": {
+      "question": "Each wolpee is not invisible. Harpins are wolpees. Each harpin is not scattered. Parpers are harpins. Every urpant is a parper. Sam is an urpant.",
+      "query": "True or false: Sam is invisible.",
+      "chain_of_thought": [
+        "Sam is an urpant.",
+        "Urpants are parpers.",
+        "Sam is a parper.",
+        "Every parper is a harpin.",
+        "Sam is a harpin.",
+        "Each harpin is a wolpee.",
+        "Sam is a wolpee.",
+        "Wolpees are not invisible.",
+        "Sam is not invisible."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 76,
+    "question": {
+      "question": "Each timple is not weightless. Each chorper is a timple. Zumpuses are chorpers. Yempors are zumpuses. Yempors are not dull. Wren is a yempor.",
+      "query": "True or false: Wren is weightless.",
+      "chain_of_thought": [
+        "Wren is a yempor.",
+        "Every yempor is a zumpus.",
+        "Wren is a zumpus.",
+        "Each zumpus is a chorper.",
+        "Wren is a chorper.",
+        "Every chorper is a timple.",
+        "Wren is a timple.",
+        "Timples are not weightless.",
+        "Wren is not weightless."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 77,
+    "question": {
+      "question": "Chorpers are not aggressive. Every kurpor is a chorper. Every yumpus is a kurpor. Every gergit is a yumpus. Rex is a gergit.",
+      "query": "True or false: Rex is aggressive.",
+      "chain_of_thought": [
+        "Rex is a gergit.",
+        "Gergits are yumpuses.",
+        "Rex is a yumpus.",
+        "Each yumpus is a kurpor.",
+        "Rex is a kurpor.",
+        "Every kurpor is a chorper.",
+        "Rex is a chorper.",
+        "Chorpers are not aggressive.",
+        "Rex is not aggressive."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 78,
+    "question": {
+      "question": "Each stirpor is temperate. Each delpee is a stirpor. Every rimpee is a delpee. Every vumpus is a rimpee. Each vumpus is not pristine. Fae is a vumpus.",
+      "query": "True or false: Fae is temperate.",
+      "chain_of_thought": [
+        "Fae is a vumpus.",
+        "Each vumpus is a rimpee.",
+        "Fae is a rimpee.",
+        "Rimpees are delpees.",
+        "Fae is a delpee.",
+        "Each delpee is a stirpor.",
+        "Fae is a stirpor.",
+        "Each stirpor is temperate.",
+        "Fae is temperate."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 79,
+    "question": {
+      "question": "Each welgit is not kind. Every rompus is a welgit. Dolpers are rompuses. Arpers are dolpers. Each arper is not straight. Stella is an arper.",
+      "query": "True or false: Stella is kind.",
+      "chain_of_thought": [
+        "Stella is an arper.",
+        "Every arper is a dolper.",
+        "Stella is a dolper.",
+        "Dolpers are rompuses.",
+        "Stella is a rompus.",
+        "Rompuses are welgits.",
+        "Stella is a welgit.",
+        "Welgits are not kind.",
+        "Stella is not kind."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 80,
+    "question": {
+      "question": "Gergits are sluggish. Parpers are gergits. Rimpees are parpers. Rompuses are rimpees. Rompuses are not loud. Stella is a rompus.",
+      "query": "True or false: Stella is sluggish.",
+      "chain_of_thought": [
+        "Stella is a rompus.",
+        "Each rompus is a rimpee.",
+        "Stella is a rimpee.",
+        "Rimpees are parpers.",
+        "Stella is a parper.",
+        "Every parper is a gergit.",
+        "Stella is a gergit.",
+        "Gergits are sluggish.",
+        "Stella is sluggish."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 81,
+    "question": {
+      "question": "Arpers are apparent. Stopins are arpers. Every stopin is not liquid. Each shergit is a stopin. Shergits are not crisp. Tergits are shergits. Stella is a tergit.",
+      "query": "True or false: Stella is apparent.",
+      "chain_of_thought": [
+        "Stella is a tergit.",
+        "Each tergit is a shergit.",
+        "Stella is a shergit.",
+        "Shergits are stopins.",
+        "Stella is a stopin.",
+        "Stopins are arpers.",
+        "Stella is an arper.",
+        "Arpers are apparent.",
+        "Stella is apparent."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 82,
+    "question": {
+      "question": "Every yimple is not weak. Each numpus is a yimple. Bongits are numpuses. Every jempor is a bongit. Wren is a jempor.",
+      "query": "True or false: Wren is weak.",
+      "chain_of_thought": [
+        "Wren is a jempor.",
+        "Each jempor is a bongit.",
+        "Wren is a bongit.",
+        "Every bongit is a numpus.",
+        "Wren is a numpus.",
+        "Numpuses are yimples.",
+        "Wren is a yimple.",
+        "Yimples are not weak.",
+        "Wren is not weak."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 83,
+    "question": {
+      "question": "Wolpees are not dull. Grimpants are wolpees. Each kurpor is a grimpant. Worples are kurpors. Stella is a worple.",
+      "query": "True or false: Stella is dull.",
+      "chain_of_thought": [
+        "Stella is a worple.",
+        "Worples are kurpors.",
+        "Stella is a kurpor.",
+        "Every kurpor is a grimpant.",
+        "Stella is a grimpant.",
+        "Grimpants are wolpees.",
+        "Stella is a wolpee.",
+        "Wolpees are not dull.",
+        "Stella is not dull."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 84,
+    "question": {
+      "question": "Each timple is red. Pergits are timples. Each urpant is a pergit. Zumpuses are urpants. Polly is a zumpus.",
+      "query": "True or false: Polly is red.",
+      "chain_of_thought": [
+        "Polly is a zumpus.",
+        "Zumpuses are urpants.",
+        "Polly is an urpant.",
+        "Urpants are pergits.",
+        "Polly is a pergit.",
+        "Pergits are timples.",
+        "Polly is a timple.",
+        "Timples are red.",
+        "Polly is red."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 85,
+    "question": {
+      "question": "Each fimple is not blunt. Each jompus is a fimple. Dalpists are jompuses. Every dalpist is floral. Each delpee is a dalpist. Polly is a delpee.",
+      "query": "True or false: Polly is blunt.",
+      "chain_of_thought": [
+        "Polly is a delpee.",
+        "Delpees are dalpists.",
+        "Polly is a dalpist.",
+        "Dalpists are jompuses.",
+        "Polly is a jompus.",
+        "Each jompus is a fimple.",
+        "Polly is a fimple.",
+        "Fimples are not blunt.",
+        "Polly is not blunt."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 86,
+    "question": {
+      "question": "Yumpuses are feisty. Each remple is a yumpus. Zhomples are remples. Every porpor is a zhomple. Porpors are not wooden. Max is a porpor.",
+      "query": "True or false: Max is feisty.",
+      "chain_of_thought": [
+        "Max is a porpor.",
+        "Every porpor is a zhomple.",
+        "Max is a zhomple.",
+        "Zhomples are remples.",
+        "Max is a remple.",
+        "Every remple is a yumpus.",
+        "Max is a yumpus.",
+        "Yumpuses are feisty.",
+        "Max is feisty."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 87,
+    "question": {
+      "question": "Each shilpant is large. Shampors are shilpants. Shampors are not aged. Every worple is a shampor. Daumpins are worples. Daumpins are active. Fae is a daumpin.",
+      "query": "True or false: Fae is large.",
+      "chain_of_thought": [
+        "Fae is a daumpin.",
+        "Daumpins are worples.",
+        "Fae is a worple.",
+        "Worples are shampors.",
+        "Fae is a shampor.",
+        "Every shampor is a shilpant.",
+        "Fae is a shilpant.",
+        "Every shilpant is large.",
+        "Fae is large."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 88,
+    "question": {
+      "question": "Each ilpist is not diminutive. Every parper is an ilpist. Each parper is small. Every dumpus is a parper. Chorpers are dumpuses. Wren is a chorper.",
+      "query": "True or false: Wren is diminutive.",
+      "chain_of_thought": [
+        "Wren is a chorper.",
+        "Chorpers are dumpuses.",
+        "Wren is a dumpus.",
+        "Each dumpus is a parper.",
+        "Wren is a parper.",
+        "Each parper is an ilpist.",
+        "Wren is an ilpist.",
+        "Every ilpist is not diminutive.",
+        "Wren is not diminutive."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 89,
+    "question": {
+      "question": "Each umpist is not hot. Every frompor is an umpist. Each rompus is a frompor. Every yumpus is a rompus. Yumpuses are not angry. Wren is a yumpus.",
+      "query": "True or false: Wren is hot.",
+      "chain_of_thought": [
+        "Wren is a yumpus.",
+        "Every yumpus is a rompus.",
+        "Wren is a rompus.",
+        "Every rompus is a frompor.",
+        "Wren is a frompor.",
+        "Frompors are umpists.",
+        "Wren is an umpist.",
+        "Umpists are not hot.",
+        "Wren is not hot."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 90,
+    "question": {
+      "question": "Porpors are not tall. Every ilpist is a porpor. Dalpists are ilpists. Each fomple is a dalpist. Fomples are not rectangular. Stella is a fomple.",
+      "query": "True or false: Stella is tall.",
+      "chain_of_thought": [
+        "Stella is a fomple.",
+        "Fomples are dalpists.",
+        "Stella is a dalpist.",
+        "Dalpists are ilpists.",
+        "Stella is an ilpist.",
+        "Every ilpist is a porpor.",
+        "Stella is a porpor.",
+        "Porpors are not tall.",
+        "Stella is not tall."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 91,
+    "question": {
+      "question": "Zhomples are weightless. Kergits are zhomples. Each irper is a kergit. Each pergit is an irper. Each pergit is not brown. Alex is a pergit.",
+      "query": "True or false: Alex is weightless.",
+      "chain_of_thought": [
+        "Alex is a pergit.",
+        "Pergits are irpers.",
+        "Alex is an irper.",
+        "Every irper is a kergit.",
+        "Alex is a kergit.",
+        "Kergits are zhomples.",
+        "Alex is a zhomple.",
+        "Zhomples are weightless.",
+        "Alex is weightless."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 92,
+    "question": {
+      "question": "Every thorpin is textured. Every rifpist is a thorpin. Every yerpist is a rifpist. Each rorpant is a yerpist. Stella is a rorpant.",
+      "query": "True or false: Stella is textured.",
+      "chain_of_thought": [
+        "Stella is a rorpant.",
+        "Each rorpant is a yerpist.",
+        "Stella is a yerpist.",
+        "Yerpists are rifpists.",
+        "Stella is a rifpist.",
+        "Each rifpist is a thorpin.",
+        "Stella is a thorpin.",
+        "Every thorpin is textured.",
+        "Stella is textured."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 93,
+    "question": {
+      "question": "Irpers are not clean. Shumples are irpers. Every shumple is not opaque. Kurpors are shumples. Daumpins are kurpors. Max is a daumpin.",
+      "query": "True or false: Max is clean.",
+      "chain_of_thought": [
+        "Max is a daumpin.",
+        "Each daumpin is a kurpor.",
+        "Max is a kurpor.",
+        "Every kurpor is a shumple.",
+        "Max is a shumple.",
+        "Shumples are irpers.",
+        "Max is an irper.",
+        "Each irper is not clean.",
+        "Max is not clean."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 94,
+    "question": {
+      "question": "Every vumpus is scattered. Each porpor is a vumpus. Every worple is a porpor. Each worple is not nervous. Each felper is a worple. Felpers are hard. Sam is a felper.",
+      "query": "True or false: Sam is scattered.",
+      "chain_of_thought": [
+        "Sam is a felper.",
+        "Felpers are worples.",
+        "Sam is a worple.",
+        "Worples are porpors.",
+        "Sam is a porpor.",
+        "Porpors are vumpuses.",
+        "Sam is a vumpus.",
+        "Vumpuses are scattered.",
+        "Sam is scattered."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 95,
+    "question": {
+      "question": "Each pergit is not passive. Each shalpist is a pergit. Every frompor is a shalpist. Jelgits are frompors. Jelgits are not earthy. Polly is a jelgit.",
+      "query": "True or false: Polly is passive.",
+      "chain_of_thought": [
+        "Polly is a jelgit.",
+        "Every jelgit is a frompor.",
+        "Polly is a frompor.",
+        "Each frompor is a shalpist.",
+        "Polly is a shalpist.",
+        "Shalpists are pergits.",
+        "Polly is a pergit.",
+        "Pergits are not passive.",
+        "Polly is not passive."
+      ],
+      "answer": "False"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 96,
+    "question": {
+      "question": "Zumpuses are kind. Each timple is a zumpus. Numpuses are timples. Shumples are numpuses. Wren is a shumple.",
+      "query": "True or false: Wren is kind.",
+      "chain_of_thought": [
+        "Wren is a shumple.",
+        "Shumples are numpuses.",
+        "Wren is a numpus.",
+        "Every numpus is a timple.",
+        "Wren is a timple.",
+        "Every timple is a zumpus.",
+        "Wren is a zumpus.",
+        "Zumpuses are kind.",
+        "Wren is kind."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 97,
+    "question": {
+      "question": "Zilpors are intricate. Every timple is a zilpor. Timples are not unstable. Each vumpus is a timple. Each vumpus is not damp. Rompuses are vumpuses. Rompuses are not bitter. Wren is a rompus.",
+      "query": "True or false: Wren is intricate.",
+      "chain_of_thought": [
+        "Wren is a rompus.",
+        "Every rompus is a vumpus.",
+        "Wren is a vumpus.",
+        "Vumpuses are timples.",
+        "Wren is a timple.",
+        "Timples are zilpors.",
+        "Wren is a zilpor.",
+        "Zilpors are intricate.",
+        "Wren is intricate."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 98,
+    "question": {
+      "question": "Every parper is metallic. Every bongit is a parper. Timples are bongits. Every shalpist is a timple. Fae is a shalpist.",
+      "query": "True or false: Fae is metallic.",
+      "chain_of_thought": [
+        "Fae is a shalpist.",
+        "Shalpists are timples.",
+        "Fae is a timple.",
+        "Each timple is a bongit.",
+        "Fae is a bongit.",
+        "Bongits are parpers.",
+        "Fae is a parper.",
+        "Every parper is metallic.",
+        "Fae is metallic."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  },
+  {
+    "id": 99,
+    "question": {
+      "question": "Zhomples are active. Every zhorpant is a zhomple. Every daumpin is a zhorpant. Stirpors are daumpins. Wren is a stirpor.",
+      "query": "True or false: Wren is active.",
+      "chain_of_thought": [
+        "Wren is a stirpor.",
+        "Stirpors are daumpins.",
+        "Wren is a daumpin.",
+        "Daumpins are zhorpants.",
+        "Wren is a zhorpant.",
+        "Each zhorpant is a zhomple.",
+        "Wren is a zhomple.",
+        "Zhomples are active.",
+        "Wren is active."
+      ],
+      "answer": "True"
+    },
+    "nhops": 3,
+    "has_distractors": false
+  }
+]

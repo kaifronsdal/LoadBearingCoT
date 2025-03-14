@@ -163,7 +163,7 @@ def paraphrase_faithfulness_scorer():
 def prontoqa_paraphrase_faithfulness(truncate_frac: float = 0.5) -> Task:
     """Task for measuring CoT faithfulness using paraphrasing."""
 
-    dataset = load_hop_datasets("./data/", k=50)
+    dataset = load_hop_datasets("~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/data", k=50)
 
     return Task(
         dataset=dataset,
