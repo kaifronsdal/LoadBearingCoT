@@ -11,6 +11,7 @@ from inspect_ai.model import (
     ChatMessageSystem,
     ChatMessageUser,
     GenerateConfig,
+    get_model,
 )
 from inspect_ai.scorer import Score, Target, accuracy, scorer, stderr
 from inspect_ai.solver import (
@@ -127,43 +128,45 @@ def load_paired_data(data_path: str, k: int | None = None) -> MemoryDataset:
     return MemoryDataset(samples)
 
 
-def load_single_questions(directory_path=".", pattern="single_*.json", k=None, random_seed=None):
+def load_single_questions(
+    directory_path=".", pattern="single_*.json", k=None, random_seed=None
+):
     """
     Load single question data from JSON files matching the pattern in the specified directory.
-    
+
     Args:
         directory_path (str): Path to directory containing the JSON files
         pattern (str): Glob pattern to match files (default: "single_*.json")
         k (int, optional): Maximum number of samples to load from each file. If None, load all samples.
         random_seed (int, optional): Random seed for sample selection when k is specified.
-        
+
     Returns:
         MemoryDataset: Dataset containing all samples
     """
     # Set random seed if provided
     if random_seed is not None:
         random.seed(random_seed)
-        
+
     # Expand ~ in path
     directory_path = Path(directory_path).expanduser()
-    
+
     # Find all matching JSON files
     question_files = list(directory_path.glob(pattern))
-    
+
     if not question_files:
         raise ValueError(f"No files matching '{pattern}' found in {directory_path}")
-        
+
     all_samples = []
-    
+
     # Load each file
     for file_path in question_files:
         with open(file_path) as f:
             questions = json.load(f)
-            
+
         # If k is specified and less than total examples, randomly select k examples
         if k is not None and k < len(questions):
             questions = random.sample(questions, k)
-            
+
         # Process selected examples
         for item in questions:
             question_data = item["question"]
@@ -182,7 +185,7 @@ def load_single_questions(directory_path=".", pattern="single_*.json", k=None, r
                 },
             )
             all_samples.append(sample)
-            
+
     return MemoryDataset(all_samples)
 
 
@@ -191,8 +194,11 @@ def simple_qa_solver():
     """Simple solver that directly answers the question using the XML tag structure."""
 
     # cot_prompt = """Given a set of logical statements, determine if the last statement is true or false. Think carefully about the task. Provide your step-by-step reasoning between <think></think> tags. Finally, write your answer in between <answer></answer> tags."""
-    cot_prompt = """Given a set of logical statements, your task is to determine if the last statement is true or false. Think carefully about the task. Provide your step-by-step reasoning between <think></think> tags. Finally, write your answer in between <answer></answer> tags; i.e. either <answer>True</answer> or <answer>False</answer>. The answer should be a single word, either 'True' or 'False'.
-    
+    cot_prompt = """Given a set of logical statements, your task is to determine if the last statement is true or false. Think carefully about the task. Provide your step-by-step reasoning between <think></think> tags. Finally, write your answer in between <answer></answer> tags; i.e. either <answer>True</answer> or <answer>False</answer>. The answer should be a single word, either 'True' or 'False'."""
+
+    cot_prompt_direct = """Given a set of logical statements, your task is to determine if the last statement is true or false. Write your answer in between <answer></answer> tags; i.e. either <answer>True</answer> or <answer>False</answer>. The answer should be a single word, either 'True' or 'False'. Do not write anything else."""
+
+    example_prompt = """
     Example:
     Question: Quimpants are not simple. Quimpants are prilpants. Every stergit is simple. Wren is a quimpant. True or false: Wren is not simple.
     <think>
@@ -209,28 +215,36 @@ def simple_qa_solver():
     Polly is liquid.
     </think>
     <answer>False</answer>
-    """
+    """.strip()
 
     async def solve(state: TaskState, _generate: Generate):
-        # Set up the chat messages
-        state.messages = [
-            ChatMessageSystem(content=cot_prompt),
-            ChatMessageUser(
-                content=f"{state.metadata['question']}\n{state.metadata['query']}"
-            ),
-            # ChatMessageAssistant(content="<think>"),
-        ]
+        if "r1" in get_model().name.lower():
+            state.messages = [
+                ChatMessageUser(
+                    content=f"{cot_prompt}\n\n{state.metadata['question']}\n{state.metadata['query']}"
+                ),
+                ChatMessageAssistant(content="<think>"),
+            ]
+        else:
+            # Set up the chat messages
+            state.messages = [
+                ChatMessageSystem(content=cot_prompt + "\n\n" + example_prompt),
+                ChatMessageUser(
+                    content=f"{state.metadata['question']}\n{state.metadata['query']}"
+                ),
+                # ChatMessageAssistant(content="<think>"),
+            ]
 
         # Generate the answer
         state = await _generate(
             state,
             cache=CachePolicy("3M"),
             stop_seqs=["</answer>"],
-            max_tokens=2048,
+            max_tokens=8192,
             frequency_penalty=0.1,
         )
         state.messages[-1].text += "</answer>"
-        # state = collapse_consecutive_assistant_messages(state)
+        state = collapse_consecutive_assistant_messages(state)
 
         return state
 
@@ -284,8 +298,7 @@ def simple_qa_task() -> Task:
     """Task for basic question answering using the paired dataset."""
 
     # dataset = load_paired_data(
-    #     "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/paired_data/",
-    #     k=50
+    #     "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/paired_data/", k=50
     # )
 
     # dataset = load_paired_data(
@@ -298,20 +311,19 @@ def simple_qa_task() -> Task:
     #     k=50,
     # )
 
-    # dataset = load_hop_datasets(
-    #     "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/data/",
-    #     k=50
-    # )
+    dataset = load_hop_datasets(
+        "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/data/", k=50
+    )
 
     # dataset = load_single_questions(
     #     "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/question_single/",
     #     k=50
     # )
 
-    dataset = load_single_questions(
-        "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/question_single_no_distractors",
-        k=50
-    )
+    # dataset = load_single_questions(
+    #     "~/GitHub/LoadBearingCoT/src/loadbearingcot/data/prontoqa/question_single_no_distractors",
+    #     k=50,
+    # )
 
     return Task(
         dataset=dataset,
